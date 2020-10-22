@@ -18,7 +18,7 @@ namespace GradeBook.GradeBooks
         public BaseGradeBook(string name,bool isWeighted)
         {
             Name = name;
-            IsWeighted = IsWeighted;
+            IsWeighted = isWeighted;
             Students = new List<Student>();
         }
 
@@ -131,7 +131,7 @@ namespace GradeBook.GradeBooks
                 gpa++;
             return gpa;
         }
-
+            
         public virtual void CalculateStatistics()
         {
             var allStudentsPoints = 0d;
